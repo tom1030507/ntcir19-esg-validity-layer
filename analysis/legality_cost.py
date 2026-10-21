@@ -427,7 +427,7 @@ def _lambda_note(arms, plain, trained) -> str:
         "does."
     )
     if single:
-        names = ", ".join(single)
+        names = ", ".join(f"Chinese {b}" for b in single)
         note += (
             f" {names} appears at $\\lambda$ = 0 only; its pre-registration "
             "asks whether a smaller checkpoint of the same family is more "
